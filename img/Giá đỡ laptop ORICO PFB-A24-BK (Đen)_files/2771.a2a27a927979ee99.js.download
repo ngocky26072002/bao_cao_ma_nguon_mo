@@ -1,0 +1,130 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2771],{36060:function(e,t,r){r.d(t,{I:function(){return v}});var o=r(91987),n=r(71323),l=r(88123),a=r(99902),i=r(25989),c=r(1902),d=r(34363),s=r(21483),m=Object.defineProperty,u=Object.getOwnPropertySymbols,p=Object.prototype.hasOwnProperty,g=Object.prototype.propertyIsEnumerable,h=(e,t,r)=>t in e?m(e,t,{enumerable:!0,configurable:!0,writable:!0,value:r}):e[t]=r,f=(e,t)=>{for(var r in t||(t={}))p.call(t,r)&&h(e,r,t[r]);if(u)for(var r of u(t))g.call(t,r)&&h(e,r,t[r]);return e},b=(e,t)=>{var r={};for(var o in e)p.call(e,o)&&0>t.indexOf(o)&&(r[o]=e[o]);if(null!=e&&u)for(var o of u(e))0>t.indexOf(o)&&g.call(e,o)&&(r[o]=e[o]);return r};let v=(0,o.forwardRef)((e,t)=>{var r,l,{title:i,value:s,defaultValue:m,autoFocus:u,type:p="text",placeholder:g,caption:h,showCaptionIcon:v=!0,error:k,disabled:O,readonly:S,prefix:C,suffix:P,maxLength:T=255,className:j,onChange:$,onKeyDown:I,onFocus:z,onBlur:Y,size:F,id:N}=e,D=b(e,["title","value","defaultValue","autoFocus","type","placeholder","caption","showCaptionIcon","error","disabled","readonly","prefix","suffix","maxLength","className","onChange","onKeyDown","onFocus","onBlur","size","id"]);let A=o.useContext(d.X),K=F||A||"m",L=e=>{z&&z(e)},R=e=>{Y&&Y(e)},X=O?"disable":k?"error500":void 0;return o.createElement(x,f({className:j},D),i&&o.createElement(n.DK,{level:4,color:"textPrimary",marginBottom:"s4"},i),o.createElement(w,{className:"input-container",padding:["s0","s12"],borderWeight:"m",borderRadius:"s",borderStyle:"solid",height:c.v[K],colorState:X||"primary500",readonly:!!S,disabled:!!O},C&&o.createElement(y,{height:c.v[K],marginRight:"s4"},"string"==typeof C?o.createElement(n.uT,{level:2,color:O?"border":"textPrimary"},C):o.cloneElement(C,{size:(null==(r=null==C?void 0:C.props)?void 0:r.size)||20})),o.createElement(E,{ref:t,id:N,type:p,value:s,defaultValue:m,autoFocus:u,placeholder:g,onChange:e=>$&&$(e.target.value),onFocus:L,onBlur:R,maxLength:T,disabled:O,readOnly:S,backgroundColor:D.backgroundColor||"",onKeyDown(e){I&&I(e)}}),P&&o.createElement(y,{height:c.v[K],marginLeft:"s4"},"string"==typeof P?o.createElement(n.uT,{level:2,color:O?"border":"textPrimary"},P):o.cloneElement(P,{size:(null==(l=null==P?void 0:P.props)?void 0:l.size)||20}))),h&&o.createElement(y,{marginTop:"s8"},v&&o.createElement(a.s,{size:16,color:X||"textSecondary"}),o.createElement(n.YS,{level:1,color:X||"textSecondary",marginLeft:"s4"},h)))});v.displayName="Input";let x=s.default.div`
+  ${i.F}
+`,E=s.default.input`
+  background-color: ${e=>e.backgroundColor?e.backgroundColor+" !important":"inherit"};
+`,y=(0,s.default)(l.b)`
+  display: flex;
+  align-items: center;
+`,w=(0,s.default)(l.b)`
+  display: flex;
+  align-items: center;
+  border-color: ${e=>e.disabled?e.theme.colors.background:e.theme.colors.inputBorder};
+
+  :focus,
+  :focus-within {
+    border-color: ${e=>e.theme.colors[e.colorState]};
+  }
+
+  ${e=>e.disabled||e.readonly?`background-color: ${e.theme.colors.background};`:e.theme.colors.white}
+  overflow: hidden;
+  input {
+    flex: 1;
+    width: 100%;
+    border: none;
+    font-size: 13px;
+    color: ${e=>e.disabled?e.theme.colors.border:e.theme.colors.textPrimary};
+
+    &::placeholder {
+      color: ${e=>e.disabled?e.theme.colors.disable:e.theme.colors.placeholder};
+    }
+    &:focus {
+      outline: none;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+`},89416:function(e,t,r){r.d(t,{t:function(){return C}});var o=r(21483),n=r(36344),l=r(48441),a=r(71323),i=r(58519),c=r(24122),d=r(13863),s=r(4680),m=r(89104),u=r(96556),p=r(91987),g=r(68481),h=r(96234),f=Object.defineProperty,b=Object.defineProperties,v=Object.getOwnPropertyDescriptors,x=Object.getOwnPropertySymbols,E=Object.prototype.hasOwnProperty,y=Object.prototype.propertyIsEnumerable,w=(e,t,r)=>t in e?f(e,t,{enumerable:!0,configurable:!0,writable:!0,value:r}):e[t]=r,k=(e,t)=>{for(var r in t||(t={}))E.call(t,r)&&w(e,r,t[r]);if(x)for(var r of x(t))y.call(t,r)&&w(e,r,t[r]);return e},O=(e,t)=>b(e,v(t)),S=(e,t)=>{var r={};for(var o in e)E.call(e,o)&&0>t.indexOf(o)&&(r[o]=e[o]);if(null!=e&&x)for(var o of x(e))0>t.indexOf(o)&&y.call(e,o)&&(r[o]=e[o]);return r};let C=e=>{var t,r,o,{shipments:d}=e,s=S(e,["shipments"]);let[m,u]=(0,p.useState)(),f=!!(null==m?void 0:m.transportProviderName)||!!(null==m?void 0:m.transportTrackingId),b=!!(null==(t=null==m?void 0:m.statusChangeHistories)?void 0:t.length);return p.createElement(p.Fragment,null,p.createElement(n.k,O(k({},s),{direction:"column",gapY:"s16"}),d.map(e=>p.createElement(h.L,{shipment:e,key:e.shipmentId,onshowMore(){u(e)}}))),p.createElement(l.u,{size:"l",visible:!!m,onClose(){u(void 0)},cancelText:"",okText:(0,g.t)("Đ\xf3ng"),onOk(){u(void 0)},title:p.createElement(a.Dx,{weight:"medium"},null==m?void 0:m.name,!!(null==m?void 0:m.shipmentId)&&p.createElement(p.Fragment,null,":\xa0 ","#",p.createElement("strong",null,m.shipmentId))),showCloseIcon:!1},(f||b)&&p.createElement(n.k,null,f&&p.createElement(i.JX,{span:(null==(r=m.statusChangeHistories)?void 0:r.length)?4.5:12,style:{paddingRight:"1rem"}},p.createElement(n.k,{direction:"column",gapY:"s8"},!!m.transportProviderName&&p.createElement(n.k,{color:"textSecondary",gap:"s4"},p.createElement(a.uT,{weight:"regular"},(0,g.t)("Giao h\xe0ng bởi"),":"),p.createElement(a.uT,{weight:"bold"},m.transportProviderName)),!!m.transportTrackingId&&p.createElement(n.k,{color:"textSecondary",gap:"s4"},p.createElement(a.uT,{weight:"regular"},(0,g.t)("M\xe3 vận đơn"),": \xa0"),p.createElement(c.z,k({variant:"link",style:{textDecoration:"unset"}},m.transportTrackingUrl?{href:m.transportTrackingUrl}:{}),p.createElement(a.uT,null,m.transportTrackingId))))),b&&p.createElement(P,{span:7.5,style:{paddingLeft:"1rem"}},p.createElement(j,{histories:m.statusChangeHistories}))),!!(null==(o=null==m?void 0:m.invoiceItems)?void 0:o.length)&&p.createElement(Y,{direction:"column",gapY:"s16",marginTop:"s16"},m.invoiceItems.map(e=>p.createElement(n.k,{key:e.sku,justify:"space-between",style:{width:"100%"},align:"start",gap:"s16"},p.createElement(n.k,{align:"start",gap:"s16"},p.createElement(F,{src:e.imageUrl||"",width:80,height:80,aspectRatio:1,contain:!0,borderRadius:4}),p.createElement(n.k,{direction:"column",gap:"s4"},p.createElement(a.uT,{weight:"medium"},e.name),p.createElement(a.YS,{color:"textSecondary",weight:"medium"},"SKU: ",e.sku),p.createElement(n.k,{gap:"s4"},!!e.sellerName&&p.createElement(p.Fragment,null,p.createElement(a.YS,{color:"textSecondary",weight:"medium"},(0,g.t)("Cung cấp bởi")," "),p.createElement(a.YS,{color:"link"},e.sellerName))))),p.createElement(n.k,{direction:"column",justify:"space-between",padding:["s4","s0"],gapY:"s16"},p.createElement(a.DK,{weight:"bold"},p.createElement(N,{value:e.unitAfterTaxPrice||0})),p.createElement("div",{style:{textAlign:"right",width:"100%",maxWidth:"100%"}},p.createElement(a.YS,{color:"textSecondary"},"x",e.quantity||1))))))))},P=(0,o.default)(i.JX)`
+  border-left: 1px solid ${({theme:e})=>e.colors.divider};
+`,T=(0,o.default)(a.YS)`
+  line-height: 24px;
+`,j=({histories:e})=>{let t=(0,p.useRef)(null),[r,o]=(0,p.useState)(),n=()=>{r?(t.current&&(t.current.style.maxHeight="90px"),o(!1)):(t.current&&(t.current.style.maxHeight="999px"),o(!0))};return p.createElement(p.Fragment,null,p.createElement($,{ref:t},p.createElement(I,{direction:"column",gapY:"s8"},null==e?void 0:e.map((e,t)=>p.createElement(z,{key:t,className:"history-item",align:"center",isActive:0===t},!!(null==e?void 0:e.changedAt)&&p.createElement(T,{color:"textSecondary",weight:"medium",marginLeft:"s8",style:{width:150}},(0,m.p)(e.changedAt,u.default.language||"vi")),p.createElement(a.uT,{marginBottom:"s4",color:"currentColor"},null==e?void 0:e.status))))),((null==e?void 0:e.length)||0)>3&&p.createElement(c.z,{variant:"link",paddingTop:"s16",onClick:n},r?(0,g.t)("Thu gọn"):(0,g.t)("Xem th\xeam")))},$=o.default.div`
+  max-height: 90px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  margin-bottom: 0.5rem;
+`,I=(0,o.default)(n.k)`
+  position: relative;
+
+  overflow: hidden;
+  ::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 2px;
+    width: 1px;
+    height: calc(100% - 36px);
+    border-left: 1px solid ${({theme:e})=>e.colors.divider};
+    transform: translateX(50%);
+  }
+  > div:last-child {
+    margin-bottom: 0.75rem;
+  }
+`,z=(0,o.default)(n.k)`
+  position: relative;
+  padding-left: 0.75rem;
+  color: ${({theme:e,isActive:t})=>t?e.colors.link:e.colors.textSecondary};
+  ::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: ${({theme:e,isActive:t})=>t?e.colors.link:e.colors.divider};
+  }
+`,Y=(0,o.default)(n.k)`
+  border-top: 1px solid ${({theme:e})=>e.colors.divider};
+  padding-top: 1rem;
+  margin-top: 1rem;
+  max-height: 340px;
+  overflow-y: auto;
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+`,F=(0,o.default)(d.w)`
+  border: 1px solid ${({theme:e})=>e.colors.divider};
+  min-width: 80px;
+`,N=(0,o.default)(s.F)`
+  font-size: unset;
+`},96234:function(e,t,r){r.d(t,{L:function(){return k}});var o=r(91987),n=r(71323),l=r(24122),a=r(36344),i=r(21483),c=r(4680),d=r(31267),s=r(89104),m=r(96556),u=r(68481),p=Object.defineProperty,g=Object.defineProperties,h=Object.getOwnPropertyDescriptors,f=Object.getOwnPropertySymbols,b=Object.prototype.hasOwnProperty,v=Object.prototype.propertyIsEnumerable,x=(e,t,r)=>t in e?p(e,t,{enumerable:!0,configurable:!0,writable:!0,value:r}):e[t]=r,E=(e,t)=>{for(var r in t||(t={}))b.call(t,r)&&x(e,r,t[r]);if(f)for(var r of f(t))v.call(t,r)&&x(e,r,t[r]);return e},y=(e,t)=>g(e,h(t)),w=(e,t)=>{var r={};for(var o in e)b.call(e,o)&&0>t.indexOf(o)&&(r[o]=e[o]);if(null!=e&&f)for(var o of f(e))0>t.indexOf(o)&&v.call(e,o)&&(r[o]=e[o]);return r};let k=e=>{var t,{shipment:r,onshowMore:i}=e,c=w(e,["shipment","onshowMore"]);let p=null==(t=r.statusChangeHistories)?void 0:t[0];return o.createElement(O,y(E({},c),{align:"center",justify:"space-between"}),o.createElement("div",null,o.createElement(n.DK,{weight:"bold",color:"textPrimary"},r.name,!!r.shipmentId&&o.createElement(o.Fragment,null,": \xa0","#",r.shipmentId)),p&&o.createElement(S,null,o.createElement(n.uT,{color:"link",marginBottom:"s4"},null==p?void 0:p.status),!!(null==p?void 0:p.changedAt)&&o.createElement(n.YS,{color:"textSecondary",weight:"medium"},(0,s.p)(null==p?void 0:p.changedAt,m.default.language||"vi"))),o.createElement(l.z,{variant:"link",suffix:o.createElement(d.d,{size:16}),onClick:i},(0,u.t)("Xem chi tiết"))),!!r.codAmount&&o.createElement(a.k,{gap:"s4"},o.createElement(n.uT,{color:"textSecondary"},(0,u.t)("Cần thanh to\xe1n"),":"),o.createElement(n.DK,{color:"primary600",weight:"bold"},o.createElement(C,{value:r.codAmount}))))},O=(0,i.default)(a.k)`
+  border-radius: 8px;
+  border: solid 1px ${({theme:e})=>e.colors.divider};
+  padding: 0.75rem 1rem;
+  width: 100%;
+`,S=i.default.div`
+  position: relative;
+  padding: 1px 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 1px;
+    height: 80%;
+    border-left: 1.5px solid ${({theme:e})=>e.colors.divider};
+    transform: translateX(-50%);
+  }
+  &::after {
+    top: 4px;
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: ${({theme:e})=>e.colors.link};
+    border: 1px solid ${({theme:e})=>e.colors.divider};
+  }
+`,C=(0,i.default)(c.F)`
+  font-size: unset;
+`}}]);
+//# sourceMappingURL=2771.a2a27a927979ee99.js.map
