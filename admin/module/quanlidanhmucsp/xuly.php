@@ -3,7 +3,7 @@ include("../../config/config.php");
 
 $tenloaisp=$_POST['tendanhmuc'];
 $thutu=$_POST['thutu'];
-if(isset($_POST['them'])){
+if(isset($_POST['themdanhmuc'])){
     //them
     $sql_them= "INSERT INTO danhmuc(ten_danhmuc,thutu) VALUE('".$tenloaisp."','".$thutu."')";
     mysqli_query($mysqli, $sql_them);
