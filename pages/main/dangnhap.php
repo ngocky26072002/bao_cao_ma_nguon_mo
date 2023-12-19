@@ -8,16 +8,6 @@ if(isset($_POST['dangnhap'])){
         $result = mysqli_query($mysqli, $sql);
         $count = mysqli_num_rows($result);
         
-        if($count > 0){
-            // Sử dụng mysqli_fetch_assoc để lấy dữ liệu từ kết quả truy vấn
-            $row = mysqli_fetch_assoc($result);
-            $_SESSION['dangky'] = $row['tenkhachhang'];
-            header('Location: index.php?quanli=giohang');
-        } else {
-            echo '<p style="color:red">Email hoặc mật khẩu sai</p>';
-        }
-    } else {
-        echo '<p style="color:red">Vui lòng nhập địa chỉ email</p>';
     }
 }
 ?>
