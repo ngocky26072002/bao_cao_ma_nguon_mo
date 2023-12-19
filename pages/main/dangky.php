@@ -6,8 +6,8 @@ if(isset($_POST["dangky"])){
     $dienthoai=$_POST["dienthoai"];
     $diachi=$_POST["diachi"];
     $matkhau=md5($_POST["matkhau"]);
-    $sql_dangky=mysqli_query($mysqli,"INSERT INTO dangky(tenkhachhang,email,diachi,matkhau,dienthoai) 
-    VALUE('".$tenkhachhang."','".$email."','".$diachi."','".$matkhau."','".$dienthoai."')");
+    $sql_dangky=mysqli_query($mysqli,"INSERT INTO dangky(tenkhachhang,email,diachi,matkhau,dienthoai) ");
+    
     if($sql_dangky){
         echo '<p style="color:green">Bạn đã đăng ký thành công</p>';
         $_SESSION['dangky']= $tenkhachhang;
