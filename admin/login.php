@@ -9,13 +9,13 @@ if(isset($_POST['dangnhap'])){
     $count=mysqli_num_rows($row);
     if ($count > 0) {
         $_SESSION['dangnhap'] = $taikhoan;
-        //header('Location: admincp/index.php');
-        header('Location: /Web_ban_laptop/admincp/index.php');
+        header('Location: index.php');
+
 
         exit;
     } else {
         echo '<p style="color:green">Tài khoản hoặc Mật khẩu không đúng</p>';
-        header('Location: index.php?quanli=admin');
+        header('Location: login.php');
         exit;
     }
     
