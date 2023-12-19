@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../../admincp/config/config.php');
+include('../../admin/config/config.php');
 
 //them so luong
 //tru so luong
