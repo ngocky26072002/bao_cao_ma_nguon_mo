@@ -7,7 +7,7 @@ while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
     ?>
     <div class="wraper_chitiet">
         <div class="hinhanh_sanpham">
-            <img width="100%" src="admincp/module/quanlisanpham/uploads/<?php echo $row_chitiet['hinhanh'] ?>" alt="">
+            <img width="100%" src="admin/module/quanlisanpham/uploads/<?php echo $row_chitiet['hinhanh'] ?>" alt="">
         </div>
         <form method="POST" action="pages/main/themgiohang.php?idsanpham=<?php echo $row_chitiet['id_sanpham'] ?>">
             <div class="chitiet_sanpham">
