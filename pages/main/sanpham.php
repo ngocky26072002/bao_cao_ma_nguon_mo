@@ -1,5 +1,6 @@
 <p>Chi tiết sản phẩm</p>
 <?php
+
 $sql_chitiet = "SELECT * FROM danhmuc,sanpham WHERE sanpham.id_danhmuc=danhmuc.id 
 AND sanpham.id_sanpham='$_GET[id]' LIMIT 1";
 $query_chitiet = mysqli_query($mysqli, $sql_chitiet);
