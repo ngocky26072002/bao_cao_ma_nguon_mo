@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    nhanh2
     <div class="wraper">
         <?php
         session_start();
