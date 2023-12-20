@@ -52,7 +52,7 @@ if (isset($_SESSION["cart"])) {
                     <?php echo $cart_item['tensanpham']; ?>
                 </td>
                 <td>
-                    <img src="admincp/module/quanlisanpham/uploads/<?php echo $cart_item['hinhanh']; ?>" width="150px">
+                    <img src="admin/module/quanlisanpham/uploads/<?php echo $cart_item['hinhanh']; ?>" width="150px">
 
                 </td>
                 <td>

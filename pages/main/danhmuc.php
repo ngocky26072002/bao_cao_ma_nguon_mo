@@ -42,7 +42,7 @@ if ($row_title = mysqli_fetch_array($query_prod)) {
            ?>
            <li>
                <a href="index.php?quanli=sanpham&id=<?php echo $row_prod['id_sanpham']?>">
-                   <img src="admincp/module/quanlisanpham/uploads/<?php echo $row_prod['hinhanh']; ?>" alt="">
+                   <img src="admin/module/quanlisanpham/uploads/<?php echo $row_prod['hinhanh']; ?>" alt="">
                    <p class="title_product">Tên sản phẩm:
                        <?php echo $row_prod['tensanpham'] ?>
                    </p>

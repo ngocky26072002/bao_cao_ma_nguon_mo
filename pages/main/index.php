@@ -10,7 +10,7 @@ $query_prod = mysqli_query($mysqli, $sql_prod);
         ?>
         <li>
             <a href="index.php?quanli=sanpham&id=<?php echo $row['id_sanpham']?>">
-                <img src="admincp/module/quanlisanpham/uploads/<?php echo $row['hinhanh'] ?>" alt="">
+                <img src="admin/module/quanlisanpham/uploads/<?php echo $row['hinhanh'] ?>" alt="">
                 <p class="title_product">Tên sản phẩm: <?php echo $row['tensanpham'] ?>
                 </p>
                 <p class="price_product">Giá: <?php echo $row['giasp'] ?> vnđ
