@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 include("config/config.php");
 if(isset($_POST['dangnhap'])){
     $taikhoan=$_POST['username'];
@@ -12,11 +12,11 @@ if(isset($_POST['dangnhap'])){
         header('Location: index.php');
 
 
-        exit;
+        //exit();
     } else {
         echo '<p style="color:green">Tài khoản hoặc Mật khẩu không đúng</p>';
         header('Location: login.php');
-        exit;
+        //exit;
     }
     
 }
